@@ -1,7 +1,8 @@
 package chess;
 
 import java.util.ArrayList;
-
+// Esmeralda Bencosme
+// Armaan Saleem
 public class Chess {
 
     enum Player { white, black }
@@ -82,7 +83,12 @@ public class Chess {
                              ReturnPlay.Message.CHECKMATE_WHITE_WINS) :
                          BoardUtils.isCheck(board, currentPlayer) ?
                              ReturnPlay.Message.CHECK : null;
-
+       // if (result.message == ReturnPlay.Message.CHECK) {
+           // System.out.println("check");
+       // } else if (result.message == ReturnPlay.Message.CHECKMATE_WHITE_WINS ||
+                  // result.message == ReturnPlay.Message.CHECKMATE_BLACK_WINS) {
+          //  System.out.println("checkmate");
+     //   }
         result.piecesOnBoard = getCurrentPieces();
         switchTurn();
         return result;
