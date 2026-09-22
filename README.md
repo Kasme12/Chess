@@ -1,2 +1,2 @@
 # Chess
-create a chess game for two user
+Create a chess game for two user
